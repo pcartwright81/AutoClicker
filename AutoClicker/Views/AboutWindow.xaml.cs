@@ -1,11 +1,11 @@
-﻿using System.Diagnostics;
-using System.Reflection;
-using System.Windows;
-using System.Windows.Navigation;
-using AutoClicker.Utils;
-
-namespace AutoClicker.Views
+﻿namespace AutoClicker.Views
 {
+    using System.Diagnostics;
+    using System.Reflection;
+    using System.Windows;
+    using System.Windows.Navigation;
+    using AutoClicker.Utils;
+
     public partial class AboutWindow : Window
     {
         #region Life Cycle

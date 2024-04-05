@@ -1,13 +1,13 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Windows;
-using System.Windows.Input;
-using AutoClicker.Models;
-using AutoClicker.Utils;
-using Serilog;
-
-namespace AutoClicker.Views
+﻿namespace AutoClicker.Views
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Windows;
+    using System.Windows.Input;
+    using AutoClicker.Models;
+    using AutoClicker.Utils;
+    using Serilog;
+
     public partial class SettingsWindow : Window
     {
         #region Dependency Properties

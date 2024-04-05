@@ -1,11 +1,11 @@
-﻿using System;
-using System.IO;
-using AutoClicker.Enums;
-using AutoClicker.Models;
-using Serilog;
-
-namespace AutoClicker.Utils
+﻿namespace AutoClicker.Utils
 {
+    using System;
+    using System.IO;
+    using AutoClicker.Enums;
+    using AutoClicker.Models;
+    using Serilog;
+
     public static class SettingsUtils
     {
         private static readonly string settingsFilePath =

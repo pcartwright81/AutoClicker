@@ -1,7 +1,7 @@
-﻿using AutoClicker.Enums;
-
-namespace AutoClicker.Models
+﻿namespace AutoClicker.Models
 {
+    using AutoClicker.Enums;
+
     public class AutoClickerSettings
     {
         public int Hours { get; set; }

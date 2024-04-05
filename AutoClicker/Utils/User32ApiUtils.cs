@@ -1,8 +1,8 @@
-﻿using System;
-using System.Runtime.InteropServices;
-
-namespace AutoClicker.Utils
+﻿namespace AutoClicker.Utils
 {
+    using System;
+    using System.Runtime.InteropServices;
+
     public static class User32ApiUtils
     {
         [DllImport("user32.dll", EntryPoint = "SetCursorPos")]

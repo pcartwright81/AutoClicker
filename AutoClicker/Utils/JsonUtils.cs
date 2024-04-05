@@ -1,9 +1,9 @@
-﻿using System.IO;
-using System.Text.Json;
-using Serilog;
-
-namespace AutoClicker.Utils
+﻿namespace AutoClicker.Utils
 {
+    using System.IO;
+    using System.Text.Json;
+    using Serilog;
+
     public static class JsonUtils
     {
         public static T ReadJson<T>(string filePath)

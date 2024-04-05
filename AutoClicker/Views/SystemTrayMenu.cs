@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows.Controls;
-using AutoClicker.Enums;
-using AutoClicker.Models;
-using AutoClicker.Utils;
-
-namespace AutoClicker.Views
+﻿namespace AutoClicker.Views
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Windows.Controls;
+    using AutoClicker.Enums;
+    using AutoClicker.Models;
+    using AutoClicker.Utils;
+
     public class SystemTrayMenu : ContextMenu, IDisposable
     {
-        private readonly List<object> contextMenu = new List<object>();
+        private readonly List<object> contextMenu = [];
 
         public SystemTrayMenu()
         {

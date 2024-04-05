@@ -1,8 +1,8 @@
-﻿using System;
-using System.Text.Json.Serialization;
-
-namespace AutoClicker.Models
+﻿namespace AutoClicker.Models
 {
+    using System;
+    using System.Text.Json.Serialization;
+
     public class KeyMapping
     {
         private string virtualKeyCodeHex;

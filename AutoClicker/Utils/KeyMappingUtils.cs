@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using AutoClicker.Models;
-
-namespace AutoClicker.Utils
+﻿namespace AutoClicker.Utils
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using AutoClicker.Models;
+
     public static class KeyMappingUtils
     {
         private static readonly string keysMappingPath =

@@ -1,7 +1,7 @@
-﻿using AutoClicker.Utils;
-
-namespace AutoClicker.Models
+﻿namespace AutoClicker.Models
 {
+    using AutoClicker.Utils;
+
     public class HotkeySettings
     {
         public static readonly KeyMapping defaultStartKeyMapping = KeyMappingUtils.GetKeyMappingByCode(Constants.DEFAULT_START_HOTKEY);

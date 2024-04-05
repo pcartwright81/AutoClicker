@@ -1,10 +1,10 @@
-﻿using System;
-using System.Drawing;
-using System.Reflection;
-using System.Windows.Input;
-
-namespace AutoClicker.Utils
+﻿namespace AutoClicker.Utils
 {
+    using System;
+    using System.Drawing;
+    using System.Reflection;
+    using System.Windows.Input;
+
     public static class AssemblyUtils
     {
         private static readonly Assembly assembly = Assembly.GetExecutingAssembly();
@@ -24,6 +24,6 @@ namespace AutoClicker.Utils
         public static RoutedUICommand CreateCommand(Type windowType, string commandName, KeyGesture keyGesture = null)
             => keyGesture == null
                 ? new RoutedUICommand(commandName, commandName, windowType)
-                : new RoutedUICommand(commandName, commandName, windowType, new InputGestureCollection() { keyGesture });
+                : new RoutedUICommand(commandName, commandName, windowType, [keyGesture]);
     }
 }

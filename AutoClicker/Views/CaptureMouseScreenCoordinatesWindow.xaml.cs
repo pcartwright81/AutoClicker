@@ -1,17 +1,17 @@
-﻿using System;
-using System.ComponentModel;
-using System.Windows;
-using System.Windows.Forms;
-using System.Windows.Input;
-using AutoClicker.Utils;
-using Serilog;
-using KeyEventArgs = System.Windows.Input.KeyEventArgs;
-using MouseEventArgs = System.Windows.Input.MouseEventArgs;
-using Point = System.Drawing.Point;
-using WPFCursor = System.Windows.Forms.Cursor;
-
-namespace AutoClicker.Views
+﻿namespace AutoClicker.Views
 {
+    using System;
+    using System.ComponentModel;
+    using System.Windows;
+    using System.Windows.Forms;
+    using System.Windows.Input;
+    using AutoClicker.Utils;
+    using Serilog;
+    using KeyEventArgs = System.Windows.Input.KeyEventArgs;
+    using MouseEventArgs = System.Windows.Input.MouseEventArgs;
+    using Point = System.Drawing.Point;
+    using WPFCursor = System.Windows.Forms.Cursor;
+
     public partial class CaptureMouseScreenCoordinatesWindow : Window
     {
         #region Life Cycle

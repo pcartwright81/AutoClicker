@@ -1,8 +1,8 @@
-﻿using System.Windows.Input;
-using AutoClicker.Utils;
-
-namespace AutoClicker.Commands
+﻿namespace AutoClicker.Commands
 {
+    using System.Windows.Input;
+    using AutoClicker.Utils;
+
     public static class MainWindowCommands
     {
         public static readonly RoutedUICommand Start =

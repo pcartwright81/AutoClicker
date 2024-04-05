@@ -1,8 +1,8 @@
-﻿using System;
-using AutoClicker.Enums;
-
-namespace AutoClicker.Models
+﻿namespace AutoClicker.Models
 {
+    using System;
+    using AutoClicker.Enums;
+
     public class HotkeyChangedEventArgs : EventArgs
     {
         public KeyMapping Hotkey { get; set; }
