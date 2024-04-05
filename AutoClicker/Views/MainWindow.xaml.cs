@@ -34,7 +34,7 @@ namespace AutoClicker.Views
         private int timesRepeated = 0;
         private readonly Timer clickTimer;
         private readonly Uri runningIconUri =
-            new Uri(Constants.RUNNING_ICON_RESOURCE_PATH, UriKind.Relative);
+            new(Constants.RUNNING_ICON_RESOURCE_PATH, UriKind.Relative);
 
         private NotifyIcon systemTrayIcon;
         private SystemTrayMenu systemTrayMenu;
@@ -49,7 +49,7 @@ namespace AutoClicker.Views
         #region Life Cycle
 
         public MainWindow()
-        {
+        {            
             clickTimer = new Timer();
             clickTimer.Elapsed += OnClickTimerElapsed;
 
@@ -117,6 +117,7 @@ namespace AutoClicker.Views
 
         private void StartCommand_Execute(object sender, ExecutedRoutedEventArgs e)
         {
+            InitMouseClick();
             int interval = CalculateInterval();
             Log.Information("Starting operation, interval={Interval}ms", interval);
 
@@ -321,7 +322,7 @@ namespace AutoClicker.Views
         #region Event Handlers
 
         private void OnClickTimerElapsed(object sender, ElapsedEventArgs e)
-        {
+        {            
             Dispatcher.Invoke(() =>
             {
                 InitMouseClick();
