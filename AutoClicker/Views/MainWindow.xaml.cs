@@ -371,7 +371,7 @@
 
         private IntPtr StartStopHooks(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
-            int hotkeyId = wParam.ToInt32();
+            int hotkeyId = (int)wParam.ToInt64();
             if (msg == Constants.WM_HOTKEY && hotkeyId == Constants.START_HOTKEY_ID || hotkeyId == Constants.STOP_HOTKEY_ID || hotkeyId == Constants.TOGGLE_HOTKEY_ID)
             {
                 int virtualKey = ((int)lParam >> 16) & 0xFFFF;

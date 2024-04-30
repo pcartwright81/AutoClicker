@@ -22,8 +22,10 @@
             => new Uri(GetProjectURL());
 
         public static RoutedUICommand CreateCommand(Type windowType, string commandName, KeyGesture keyGesture = null)
+#pragma warning disable IDE0028 // Simplify collection initialization
             => keyGesture == null
                 ? new RoutedUICommand(commandName, commandName, windowType)
-                : new RoutedUICommand(commandName, commandName, windowType, [keyGesture]);
+                : new RoutedUICommand(commandName, commandName, windowType, new InputGestureCollection() { keyGesture });
+#pragma warning restore IDE0028 // Simplify collection initialization
     }
 }
